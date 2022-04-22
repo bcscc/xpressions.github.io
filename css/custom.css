@@ -327,3 +327,60 @@ p {
         text-align: center;
     }
 }
+
+/* gallery ends here */
+
+/* article CSS begins here */
+
+.top-level-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.article-heading {
+    text-align: left;
+}
+
+
+.grid-mobile-article {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: min-content 50vh min-content;
+    padding: 2%;
+    margin: 3%;
+    grid-gap: 2%;
+}
+
+.img1-article {
+    grid-row: 2/3;
+    background-image: url("../img/doodle2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 786px) {
+    .grid-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: min-content 50vh min-content 50vh min-content 50vh min-content;
+        grid-gap: 20px;
+    }
+
+    .heading-gallery {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    .img-g-1 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+}
