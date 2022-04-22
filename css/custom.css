@@ -1,19 +1,9 @@
-h1 {
-    text-align: center;
+.franklin {
+    font-family: 'Franklin Gothic Book', arial;
 }
 
-h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-}
-
-h3 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-}
-
-p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.megistica {
+    font-family: 'Megistica', sans-serif;
 }
 
 .top-level {
