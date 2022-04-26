@@ -17,7 +17,7 @@
 .grid-mobile{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: min-content 50vh 50vh 70vh 70vh 50vh 50vh;
+    grid-template-rows: min-content 50vh 50vh 100vh 100vh 50vh 50vh min-content;
     padding: 2%;
     margin: 3%;
     grid-gap: 2%;
@@ -84,11 +84,18 @@
     border-radius: 5px;
 }
 
+.footer-photoshoot {
+    grid-row: 8/9;
+    grid-column: 1/2;
+    padding: 15px;
+    margin: 15px;
+}
+
 @media screen and (min-width: 786px) {
     .grid-mobile {
         display: grid;
         grid-template-columns: repeat(8, 2fr);
-        grid-template-rows: min-content repeat(8, 5vw);
+        grid-template-rows: min-content repeat(8, 5vw) min-content;
         grid-gap: 20px;
     }
 
@@ -126,7 +133,15 @@
         grid-column: 7/9;
         grid-row: 7/10;
     }
+
+    .footer-photoshoot {
+        grid-row: 10/11;
+        grid-column: 1/9;
+        padding: 15px;
+        margin: 15px;
+    }
 }
+
 
 /* CSS for photoshoot ends here*/
 /* CSS for gallery starts here */
@@ -142,7 +157,7 @@
 .gallery-grid-mobile{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: min-content 50vh min-content 50vh min-content 50vh min-content 50vh min-content 50vh min-content 50vh min-content;
+    grid-template-rows: min-content 50vh min-content 50vh min-content 50vh min-content 50vh min-content 50vh min-content 50vh min-content min-content;
     padding: 1%;
     margin: 3%;
     grid-gap: 3%;
@@ -238,11 +253,19 @@
     text-align: center;
 }
 
+.footer-gallery {
+    grid-column: 1/2;
+    grid-row: 14/15;
+    margin: 2%;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
 @media screen and (min-width: 786px) {
     .grid-gallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: min-content 50vh min-content 50vh min-content 50vh min-content;
+        grid-template-rows: min-content 50vh min-content 50vh min-content min-content;
         grid-gap: 20px;
     }
 
@@ -315,6 +338,14 @@
         grid-column: 3/4;
         grid-row: 5/6;
         text-align: center;
+    }
+
+    .footer-gallery {
+        grid-column: 1/4;
+        grid-row: 6/7;
+        margin: 2%;
+        padding: 1%;
+        margin-bottom: 1%;
     }
 }
 
