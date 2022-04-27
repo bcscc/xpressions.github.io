@@ -423,3 +423,30 @@ a {
     text-decoration: none;
     color: black;
 }
+
+a:hover {
+    color: rgb(0, 51, 255);
+  }
+
+a:link {
+    color: rgb(0, 0, 0);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(128, 0, 255);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(0, 51, 255);
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(0, 51, 255);
+  }
+
+  input:focus {
+      outline: rgb(0, 51, 255);
+  }
