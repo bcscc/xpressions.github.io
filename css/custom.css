@@ -106,7 +106,7 @@ a {
         margin-right: 20px;
     }
 
-    .navbar-brand {
+    .navbar-brand-hide {
         display: none;
     }
     .border-bottom-custom {
@@ -681,7 +681,7 @@ a {
 @media screen and (min-width: 786px) {
     .grid-article {
         display: grid;
-        grid-template-columns: 3.5fr 0.5fr;
+        grid-template-columns: 3.5fr;
         grid-template-rows: min-content 80vh min-content min-content;
         grid-gap: 20px;
     }
