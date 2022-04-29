@@ -1,4 +1,4 @@
-/* global */
+/* CSS global start*/
 
 .franklin {
     font-family: 'Franklin Gothic Book', arial;
@@ -8,7 +8,29 @@
     font-family: 'Megistica', sans-serif;
 }
 
-/* navbar */
+.img-standard {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* mouse over link */
+a:hover {
+    color: #319CFF;
+    }
+
+/* selected link */
+a:active {
+    color: #90E6F2;
+    }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* CSS global end*/
+/* CSS navbar start*/
 
 .brand-logo {
     height: 50px;
@@ -38,8 +60,39 @@
     color: white !important;
 }
 
+.border-bottom-custom {
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: #DFDFDF;
+}
 
+.banner {
+    margin-top: -70px;
+    z-index: -1;
+    position: relative;
+    text-align: center;
+    display: none;
+}
+.banner:before, .banner:after {
+    position: absolute;
+    top: 60%;
+    overflow: hidden;
+    width: 50%;
+    height: 1px;
+    content: '\a0';
+    background-color: #DFDFDF;
+}
+.banner:before {
+    margin-left: -50%;
+    text-align: right;
+}
 
+.banner-logo {
+    height: 150px;
+    width: 150px;
+}
+
+/* desktop view */
 @media (min-width: 992px) {
     .navbar-brand.abs{
         position: absolute;
@@ -52,13 +105,202 @@
     .sub1 {
         margin-right: 20px;
     }
+
+    .navbar-brand {
+        display: none;
+    }
+    .border-bottom-custom {
+        border-bottom-style: hidden;
+    }
+    .banner {
+        display: block;
+    }
+    .brand-logo-1 {
+        visibility: hidden;
+    }
 }
 
-.text-article-right {
-    text-align: right;
+/* CSS navbar end*/
+/* CSS homepage start*/
+
+
+.homepage-grid-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
 }
 
-/* gallery */
+.galleries-column {
+    padding: 0 6%;
+}
+
+.centerpiece-column {
+    padding: 0 3% 3% 3%;
+}
+
+.articles-column {
+    padding: 0 6%;
+}
+
+/* center */
+
+.centerpiece-img {
+    background-image: url("../img/Femme/DSC05307.jpg");
+    min-height: 400px;
+}
+
+/* right */
+
+.article {
+    padding: 18px 0;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: #DFDFDF;
+}
+
+.a-layout{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 5px;
+}
+
+.article-text{
+    grid-column: 1/2;
+    padding: 0;
+    font-size: 1.1em;
+    
+}
+.article-font {
+    font-size: 1.2em;
+}
+.article-img{
+    grid-column: 2/3;
+}
+
+.article-img-1{
+    background-image: url("../img/Body/Body-7.jpg");
+    min-height: 90px;
+}
+.article-img-2{
+    background-image: url("../img/Our+Roots/Nature-16.jpg");
+    min-height: 90px;
+}
+.article-img-3{
+    background-image: url("../img/Barbie+Bratz/Bratz+Barbie-13.jpg");
+    min-height: 90px;
+}
+.article-img-4{
+    background-image: url("../img/U.N.I.T.Y./VideoMusicBox-09.jpg");
+    min-height: 90px;
+}
+
+@media screen and (min-width: 786px) {
+    .a-layout {
+        grid-template-columns: 3fr 1fr;
+    }
+}
+
+/* left */
+
+.gallery {
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: #DFDFDF;
+}
+
+.g-layout {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    gap: 5px;
+}
+
+.gallery-text{
+    grid-row: 2/3;
+    padding: 0 5%;
+}
+.gallery-font {
+    font-size: 1.5em;
+}
+.gallery-img{
+    grid-row: 1/2;
+}
+
+.g-img-size{
+    min-height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gallery-img-1{
+    background-image: url("../img/Barbie+Bratz/Bratz+Barbie-09.jpg");
+}
+.gallery-img-2{
+    background-image: url("../img/Body/Body-3.jpg");
+}
+
+/* deskstop view */
+
+@media (min-width: 992px) {
+    .homepage-grid-layout {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .galleries-column {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    /* center */
+    .centerpiece-column {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        border-style: none solid;
+        border-width: 1px;
+        border-color: #DFDFDF;
+    }
+
+    /* right */
+    .articles-column {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin-bottom: 0 !important;
+    }
+    .a-layout {
+        grid-template-columns: 1.5fr 1fr;
+    }
+    .article-text {
+        font-size: 1em;
+        padding: 5% 0;
+    }
+    .article-font {
+        font-size: 1.1em;
+    }
+    .article-img {
+        min-height: 70px;
+    }
+
+    /* left */
+    .galleries-column {
+        padding-left: 6%;
+        margin-bottom: 0 !important;
+    }
+    .gallery-text {
+        font-size: 0.8em;
+    }
+    .g-other-text {
+        text-align: left;
+        padding: 0 10%;
+    }
+    .g-img-size {
+        min-height: 160px;
+    }
+}
+
+/* CSS homepage end */
+/* CSS photoshoot start*/
 
 .top-level {
     display: flex;
@@ -196,9 +438,8 @@
     }
 }
 
-
-/* CSS for photoshoot ends here*/
-/* CSS for gallery starts here */
+/* CSS photoshoot end*/
+/* CSS gallery start*/
 
 .wrapper-gallery {
     display: flex;
@@ -403,9 +644,8 @@
     }
 }
 
-/* gallery ends here */
-
-/* article CSS begins here */
+/* CSS gallery end*/
+/* CSS article start */
 
 .top-level-article {
     display: flex;
@@ -415,12 +655,9 @@
     width: 100%;
 }
 
-
-
 .article-heading {
     text-align: left;
 }
-
 
 .grid-mobile-article {
     display: grid;
@@ -472,18 +709,4 @@
     }
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
-
-/* mouse over link */
-a:hover {
-color: #319CFF;
-}
-
-/* selected link */
-a:active {
-color: #90E6F2;
-}
+/* CSS article end */
