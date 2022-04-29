@@ -707,6 +707,10 @@ a {
         margin: 1%;
         padding: 1%;
     }
+
+    .text-article-right {
+        text-align: right;
+    }
 }
 
 /* CSS article end */
