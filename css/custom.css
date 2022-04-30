@@ -300,6 +300,7 @@ a {
 }
 
 /* CSS homepage end */
+
 /* CSS photoshoot start*/
 
 .top-level {
@@ -714,3 +715,9 @@ a {
 }
 
 /* CSS article end */
+
+.footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
